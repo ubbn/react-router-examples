@@ -11,8 +11,8 @@ const SubComp = (x) => {
 export default (p) => {
   return (
     <div className='thumbnail'>
-      <b> Contact </b>
-      <input type="text" value={p.height}/>
+      <h2>Simple route</h2>
+      <input type="text" value={p.height} onChange={event => {}}/>
       <input type="submit" value={p.name}/>
       <SubComp name={p.name}/>
     </div>
