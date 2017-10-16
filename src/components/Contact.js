@@ -14,7 +14,7 @@ export default (p) => {
       <h2>Simple route</h2>
       <input type="text" value={p.height} onChange={event => {}}/>
       <input type="submit" value={p.name}/>
-      <SubComp name={p.name}/>
+      <SubComp name={p.match.url}/>
     </div>
   )
 }
