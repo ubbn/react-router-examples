@@ -27,7 +27,8 @@ const People = ({ match }) => {
 
   return (
     <div className='thumbnail'>
-      <h3>{person.name}'s friends: </h3>
+      <h3>Recursive link</h3>
+      <b>{person.name}'s friends: </b>
       <ul>
         {person.friends.map(id => (
           <li key={id}>

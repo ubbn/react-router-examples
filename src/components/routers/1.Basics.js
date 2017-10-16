@@ -9,6 +9,7 @@ const Basics = () => {
   return (
     <Router>
       <div className='thumbnail'>
+        <h2>Basics</h2>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about" >About</Link></li>

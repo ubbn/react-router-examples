@@ -10,6 +10,7 @@ const UrlParams = () => {
   return (
     <Router>
       <div className='thumbnail' >
+        <h2>Url parameters</h2>
         <ul>
           <li><Link to="/net">Netflix</Link></li>
           <li><Link to="/air">Airbnb</Link></li>
