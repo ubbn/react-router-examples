@@ -6,18 +6,18 @@ import {
   Link
 } from 'react-router-dom'
 
-const UrlParams = () => {
+const UrlParams = ({match}) => {
   return (
     <Router>
       <div className='thumbnail' >
         <h2>Url parameters</h2>
         <ul>
-          <li><Link to="/net">Netflix</Link></li>
-          <li><Link to="/air">Airbnb</Link></li>
-          <li><Link to="/deep">Deepmind</Link></li>
+          <li><Link to={`${match.url}/net`}>Netflix</Link></li>
+          <li><Link to={`${match.url}/air`}>Airbnb</Link></li>
+          <li><Link to={`${match.url}/deep`}>Deepmind</Link></li>
         </ul>
 
-        <Route path='/:id' component={Url} />
+        <p><Route path={`${match.url}/:id`} component={Url} /></p>
       </div>
     </Router>
   )

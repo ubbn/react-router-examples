@@ -15,18 +15,18 @@ const CheckComp = () => (
   <Checkbox>Check me!</Checkbox>
 )
 
-const PreventTransit = () => (
+const PreventTransit = ({match}) => (
   <Router>
     <div className='thumbnail' >
       <h3>Prevent transition</h3>
       <ul>
-        <li><Link to='/button'>Button</Link></li>
-        <li><Link to='/check'>Checkbox</Link></li>
-        <li><Link to='/text'>Textarea</Link></li>
+        <li><Link to={`${match.url}/button`}>Button</Link></li>
+        <li><Link to={`${match.url}/check`}>Checkbox</Link></li>
+        <li><Link to={`${match.url}/text`}>Textarea</Link></li>
       </ul>
-      <Route path='/button' component={ButtonComp}/>
-      <Route path='/check' component={CheckComp}/>
-      <Route path='/text' component={TextComp}/>
+      <Route path={`${match.url}/button`} component={ButtonComp}/>
+      <Route path={`${match.url}/check`} component={CheckComp}/>
+      <Route path={`${match.url}/text`} component={TextComp}/>
     </div>
   </Router>
 )

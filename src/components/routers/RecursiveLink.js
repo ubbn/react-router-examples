@@ -14,10 +14,10 @@ const PEEPS = [
 
 const findPerson = (id) => PEEPS.find(x => x.id == id)
 
-const RecursiveLink = (props) => {
+const RecursiveLink = ({match}) => {
   return (
     <Router>
-      <People match={{params: {id: 0}, url: props.match.url}} />
+      <People match={{params: {id: 0}, url: match.url}} />
     </Router>
   )
 }
