@@ -6,9 +6,9 @@ import {
   Grid,
 } from 'react-bootstrap'
 
-import Navigation from './components/Navigation'
-import Routes from './components/Routes'
-import Header from './components/Header'
+import Navigation from './components/main/Navigation'
+import Routes from './components/main/Routes'
+import Header from './components/main/Header'
 
 class App extends Component {
   render () {

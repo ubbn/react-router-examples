@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-import RecursiveLink from './routers/RecursiveLink'
-import Basics from './routers/1.Basics'
-import UrlParams from './routers/2.UrlParameters'
-import RedirectsAuth from './routers/3.RedirectsAuth'
-import CustomLink from './routers/4.CustomLink'
-import PreventTransition from './routers/5.PreventTransition'
+import RecursiveLink from '../example/RecursiveLink'
+import Basics from '../example/1.Basics'
+import UrlParams from '../example/2.UrlParameters'
+import RedirectsAuth from '../example/3.RedirectsAuth'
+import CustomLink from '../example/4.CustomLink'
+import PreventTransition from '../example/5.PreventTransition'
 
 const Routes = () => (
   <div>

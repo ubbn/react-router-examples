@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# mock files
+src/components/mock
+
 # testing
 /coverage
 
