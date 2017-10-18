@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { 
   Route, 
   BrowserRouter as Router,
@@ -26,17 +26,8 @@ const Basics = ({match}) => {
   )
 }
 
-const Home = () => {
-  return (
-    <div>Home</div>
-  );
-}
-
-const About = () => {
-  return (
-    <div>About</div>
-  );
-}
+const Home = () => <h4>Home</h4>
+const About = () => <h4>About</h4>
 
 const TOPICS = [
   {id: 0, url: 'rest', topic: 'REST api'},
