@@ -8,6 +8,7 @@ import CustomLink from '../example/4.CustomLink'
 import PreventTransition from '../example/5.PreventTransition'
 import NoMatch404 from '../example/6.NoMatch404'
 import RecursiveLink from '../example/7.RecursiveLink'
+import SideBar from '../example/8.SideBar'
 
 const Routes = () => (
   <div>
@@ -18,6 +19,7 @@ const Routes = () => (
     <Route path='/prev-trans' component={PreventTransition}/>
     <Route path='/no-match' component={NoMatch404}/>
     <Route path='/rec-link' component={RecursiveLink}/>
+    <Route path='/sidebar' component={SideBar}/>
   </div>
 )
 

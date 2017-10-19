@@ -14,6 +14,7 @@ const Navigation = () => (
     <LinkContainer to='/prev-trans'><ListGroupItem header='Prevent transition'>A way to avoid transitions</ListGroupItem></LinkContainer>
     <LinkContainer to='/no-match'><ListGroupItem header='No Match 404'>To handle no match/404</ListGroupItem></LinkContainer>
     <LinkContainer to='/rec-link'><ListGroupItem header='Recursive links'>A way to use recursively renders following link</ListGroupItem></LinkContainer>
+    <LinkContainer to='/sidebar'><ListGroupItem header='Sidebar'>Rendering in main and side bar</ListGroupItem></LinkContainer>
   </ListGroup>
 )
 
