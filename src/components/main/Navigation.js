@@ -12,6 +12,7 @@ const Navigation = () => (
     <LinkContainer to='/redirect-auth'><ListGroupItem header='Redirects (Auth)'>Redirecting to authenticate </ListGroupItem></LinkContainer>
     <LinkContainer to='/custom-link'><ListGroupItem header='Custom link'>Cutom link component</ListGroupItem></LinkContainer>
     <LinkContainer to='/prev-trans'><ListGroupItem header='Prevent transition'>A way to avoid transitions</ListGroupItem></LinkContainer>
+    <LinkContainer to='/no-match'><ListGroupItem header='No Match 404'>To handle no match/404</ListGroupItem></LinkContainer>
     <LinkContainer to='/rec-link'><ListGroupItem header='Recursive links'>A way to use recursively renders following link</ListGroupItem></LinkContainer>
   </ListGroup>
 )

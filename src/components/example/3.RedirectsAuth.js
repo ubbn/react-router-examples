@@ -8,18 +8,18 @@ import {
   withRouter
 } from 'react-router-dom'
 
-const RedirectsAuth = () => {
+const RedirectsAuth = ({match}) => {
   return (
     <Router>
       <div className='thumbnail'>
         <AuthButton />
         <ul>
-          <li><Link to='/public' >Public page</Link></li>
-          <li><Link to='/protected' >Protected page</Link></li>
+          <li><Link to={`${match.url}/public`} >Public page</Link></li>
+          <li><Link to={`${match.url}/protected`} >Protected page</Link></li>
         </ul>
-        <Route path='/public' component={Public}/>
-        <Route path='/login' component={Login}/>
-        <PrivateRoute path='/protected' component={Protected}/>
+        <Route path={`${match.url}/public`} component={Public}/>
+        <Route path={`${match.url}/login`} component={Login}/>
+        <PrivateRoute path={`${match.url}/protected`} component={Protected}/>
       </div>
     </Router>
   )
@@ -37,7 +37,7 @@ const fakeAuth = {
   }
 }
 
-const AuthButton = withRouter(({history}) => (
+const AuthButton = withRouter(({history, match}) => (
   fakeAuth.isAuthenticated ? (
     <div>
       <Alert bsStyle='success'>Welcome!</Alert>
@@ -86,7 +86,7 @@ class Login extends React.Component {
 
     return(
       <div>
-        <Alert bsStyle='danger'>You must log in to view the page at {from.pathname}</Alert>
+        <Alert bsStyle='danger'>You must log in to view the page at <code>{from.pathname}</code></Alert>
         <Button onClick={this.login}>Log in</Button>
       </div>
     )
