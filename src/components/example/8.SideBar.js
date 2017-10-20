@@ -23,7 +23,7 @@ const routes = [
 
 const SideBar = () => (
   <Router>
-    <div className='thumbnail' style={{display: 'flex'}}>
+    <div style={{display: 'flex'}}>
       <div style={{ 
         padding: '10px',
         width: '40%', 

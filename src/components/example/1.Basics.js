@@ -8,7 +8,7 @@ import {
 const Basics = ({match}) => {
   return (
     <Router>
-      <div className='thumbnail'>
+      <div>
         <h2>Basics</h2>
         <ul>
           <li><Link to={match.url}>Home</Link></li>

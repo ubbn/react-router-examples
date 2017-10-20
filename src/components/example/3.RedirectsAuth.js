@@ -11,7 +11,7 @@ import {
 const RedirectsAuth = ({match}) => {
   return (
     <Router>
-      <div className='thumbnail'>
+      <div>
         <AuthButton />
         <ul>
           <li><Link to={`${match.url}/public`} >Public page</Link></li>

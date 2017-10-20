@@ -17,7 +17,7 @@ const CheckComp = () => (
 
 const PreventTransit = ({match}) => (
   <Router>
-    <div className='thumbnail' >
+    <div >
       <h3>Prevent transition</h3>
       <ul>
         <li><Link to={`${match.url}/button`}>Button</Link></li>

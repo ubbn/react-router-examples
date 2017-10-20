@@ -10,7 +10,7 @@ const About = () => <div><h3>About</h3></div>
 
 const CustomLink = ({match}) => (
   <Router>
-    <div className='thumbnail'>
+    <div>
       <OldSchoolLink to={match.url} activeOnlyWhenExact={true} label={'Home'} />
       <OldSchoolLink to={`${match.url}/about`} label={'About'} />
       <hr/>

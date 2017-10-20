@@ -9,7 +9,7 @@ import {
 const UrlParams = ({match}) => {
   return (
     <Router>
-      <div className='thumbnail' >
+      <div >
         <h2>Url parameters</h2>
         <ul>
           <li><Link to={`${match.url}/net`}>Netflix</Link></li>

@@ -9,7 +9,7 @@ import {
 
 const NoMatch404 = ({match}) => (
   <Router>
-    <div className='thumbnail'>
+    <div>
       <ul>
         <li><Link to={match.url} >Exact to match</Link></li>
         <li><Link to={`${match.url}/old-match`} >Will match, but to be redirected</Link></li>

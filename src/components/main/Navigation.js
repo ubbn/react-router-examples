@@ -15,6 +15,8 @@ const Navigation = () => (
     <LinkContainer to='/no-match'><ListGroupItem header='No Match 404'>To handle no match/404</ListGroupItem></LinkContainer>
     <LinkContainer to='/rec-link'><ListGroupItem header='Recursive links'>A way to use recursively renders following link</ListGroupItem></LinkContainer>
     <LinkContainer to='/sidebar'><ListGroupItem header='Sidebar'>Rendering in main and side bar</ListGroupItem></LinkContainer>
+    <LinkContainer to='/animated'><ListGroupItem header='Animated Transition'>Animates transition using package react-transition-group</ListGroupItem></LinkContainer>
+    <LinkContainer to='/ambiguous'><ListGroupItem header='Ambiguous match'>Ambiguous match</ListGroupItem></LinkContainer>
   </ListGroup>
 )
 
