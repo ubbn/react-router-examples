@@ -17,6 +17,7 @@ const Navigation = () => (
     <LinkContainer to='/sidebar'><ListGroupItem header='Sidebar'>Rendering in main and side bar</ListGroupItem></LinkContainer>
     <LinkContainer to='/animated'><ListGroupItem header='Animated Transition'>Animates transition using package react-transition-group</ListGroupItem></LinkContainer>
     <LinkContainer to='/ambiguous'><ListGroupItem header='Ambiguous match'>Ambiguous match</ListGroupItem></LinkContainer>
+    <LinkContainer to='/route-config'><ListGroupItem header='Route config'>React routes can be created from config</ListGroupItem></LinkContainer>
   </ListGroup>
 )
 

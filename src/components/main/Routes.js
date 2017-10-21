@@ -11,6 +11,7 @@ import RecursiveLink from '../example/7.RecursiveLink'
 import SideBar from '../example/8.SideBar'
 import AnimatedTransition from '../example/9.AnimatedTransition'
 import AmbiguousMatch from '../example/10.AmbiguousMatch'
+import RouteConfig from '../example/11.RouteConfig'
 
 const Routes = () => (
   <div className='thumbnail'>
@@ -24,6 +25,7 @@ const Routes = () => (
     <Route path='/sidebar' component={SideBar}/>
     <Route path='/animated' component={AnimatedTransition}/>
     <Route path='/ambiguous' component={AmbiguousMatch}/>
+    <Route path='/route-config' component={RouteConfig}/>
   </div>
 )
 
