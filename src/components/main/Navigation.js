@@ -18,6 +18,8 @@ const Navigation = () => (
     <LinkContainer to='/animated'><ListGroupItem header='Animated Transition'>Animates transition using package react-transition-group</ListGroupItem></LinkContainer>
     <LinkContainer to='/ambiguous'><ListGroupItem header='Ambiguous match'>Ambiguous match</ListGroupItem></LinkContainer>
     <LinkContainer to='/route-config'><ListGroupItem header='Route config'>React routes can be created from config</ListGroupItem></LinkContainer>
+    <LinkContainer to='/modal-gallery'><ListGroupItem header='Modal gallery'>Modal gallery, two screens at one url</ListGroupItem></LinkContainer>
+    <LinkContainer to='/static-router'><ListGroupItem header='Static router'>Static router example</ListGroupItem></LinkContainer>
   </ListGroup>
 )
 
