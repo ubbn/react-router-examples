@@ -11,6 +11,7 @@ import Routes from './components/main/Routes'
 import Header from './components/main/Header'
 import UrlLocation from './components/main/UrlLocation'
 import ForkMe from './components/main/ForkMe'
+import Footer from './components/main/Footer'
 
 class App extends Component {
   render () {
@@ -24,6 +25,7 @@ class App extends Component {
             <Col xs={8}><Routes/></Col>
           </Row>
           <ForkMe/>
+          <Footer />
         </Grid>
       </Router>
     )

@@ -23,12 +23,12 @@ export const routes = [
   },
   { path: '/url-param',    
     component: UrlParams,
-    title: 'Url parameters',
+    title: 'Url Parameters',
     desc: 'Passing Url parameters '
   },
   { path: '/custom-link',    
     component: CustomLink,
-    title: 'Custom link',
+    title: 'Custom Link',
     desc: 'Customized link style'
   },
   { path: '/redirect-auth',    
@@ -38,7 +38,7 @@ export const routes = [
   },
   { path: '/prev-trans',    
     component: PreventTransition,
-    title: 'Prevent transition',
+    title: 'Prevent Transition',
     desc: 'A way to avoid transitions'
   },
   { path: '/no-match',    
@@ -48,7 +48,7 @@ export const routes = [
   },
   { path: '/rec-link',    
     component: RecursiveLink,
-    title: 'Recursive links',
+    title: 'Recursive Link',
     desc: 'A way to use recursively renders following link'
   },
   { path: '/sidebar',    
