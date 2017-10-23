@@ -84,10 +84,16 @@ export const routes = [
 ]
 
 const Routes = () => (
-  <div className='thumbnail'>
+  <div className='thumbnail' style={{padding: '20px'}}>
     {routes.map(route => (
       <Route path={route.path} component={route.component}/>
     ))}
+    <Route exact path='/' render={() => (
+      <div>
+        <p>Current path is exactly matched with <code>/</code></p>
+        <p>Choose examples from right</p>
+      </div>
+    )}/>
   </div>
 )
 
