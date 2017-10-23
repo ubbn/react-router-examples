@@ -9,6 +9,7 @@ import {
 import Navigation from './components/main/Navigation'
 import Routes from './components/main/Routes'
 import Header from './components/main/Header'
+import UrlLocation from './components/main/UrlLocation'
 
 class App extends Component {
   render () {
@@ -16,6 +17,7 @@ class App extends Component {
       <Router>
         <Grid>
           <Row><Col xs={12}><Header /></Col></Row>
+          <Row><Col xs={12}><UrlLocation/></Col></Row>
           <Row>
             <Col xs={4}><Navigation/></Col>
             <Col xs={8}><Routes/></Col>

@@ -5,7 +5,6 @@ import {
   Link
 } from 'react-router-dom'
 
-const Main = () => <h2>Main</h2>
 const Sandwiches = () => <h2>Sandwiches</h2>
 const Bus = () => <h3>Bus</h3>
 const Cart = () => <h3>Cart</h3>
