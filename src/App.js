@@ -12,12 +12,14 @@ import Header from './components/main/Header'
 import UrlLocation from './components/main/UrlLocation'
 import ForkMe from './components/main/ForkMe'
 import Footer from './components/main/Footer'
+import NavBar from './components/main/NavBar'
 
 class App extends Component {
   render () {
     return (
       <Router>
         <Grid>
+          <Row><Col xs={12}><NavBar /></Col></Row>
           <Row><Col xs={12}><Header /></Col></Row>
           <Row><Col xs={12}><UrlLocation/></Col></Row>
           <Row>
