@@ -14,79 +14,102 @@ import AmbiguousMatch from '../example/10.AmbiguousMatch'
 import RouteConfig from '../example/11.RouteConfig'
 import ModalGallery from '../example/12.ModalGallery'
 import StaticRouter from '../example/13.StaticRouter'
+import CodeSnippet from './CodeSnippet'
 
 export const routes = [
   { path: '/basics',
     component: Basics,
     title: 'Basics',
+    file: '1.Basics.js',
     desc: 'Basics Routing example'
   },
-  { path: '/url-param',    
+  { path: '/url-param',
     component: UrlParams,
     title: 'Url Parameters',
+    file: '2.UrlParameters.js',
     desc: 'Passing Url parameters '
   },
-  { path: '/custom-link',    
+  { path: '/custom-link',
     component: CustomLink,
     title: 'Custom Link',
+    file: '4.CustomLink.js',
     desc: 'Customized link style'
   },
-  { path: '/redirect-auth',    
+  { path: '/redirect-auth',
     component: RedirectsAuth,
     title: 'Redirects (Auth)',
+    file: '3.RedirectsAuth.js',
     desc: 'Redirecting to authenticate'
   },
-  { path: '/prev-trans',    
+  { path: '/prev-trans',
     component: PreventTransition,
     title: 'Prevent Transition',
+    file: '5.PreventTransition.js',
     desc: 'A way to avoid transitions'
   },
-  { path: '/no-match',    
+  { path: '/no-match',
     component: NoMatch404,
     title: 'No Match 404',
+    file: '6.NoMatch404.js',
     desc: 'Handling case of no match/404'
   },
-  { path: '/rec-link',    
+  { path: '/rec-link',
     component: RecursiveLink,
     title: 'Recursive Link',
+    file: '7.RecursiveLink.js',
     desc: 'A way to use recursively renders following link'
   },
-  { path: '/sidebar',    
+  { path: '/sidebar',
     component: SideBar,
     title: 'Sidebar',
+    file: '8.SideBar.js',
     desc: 'Rendering in main and side bar'
   },
-  { path: '/animated',    
+  { path: '/animated',
     component: AnimatedTransition,
     title: 'Animated Transition',
+    file: '9.AnimatedTransition.js',
     desc: 'Animates transition using package react-transition-group'
   },
-  { path: '/ambiguous',    
+  { path: '/ambiguous',
     component: AmbiguousMatch,
     title: 'Ambiguous Match',
+    file: '10.AmbiguousMatch.js',
     desc: 'Ambiguous match'
   },
-  { path: '/route-config',    
+  { path: '/route-config',
     component: RouteConfig,
     title: 'Route Config',
+    file: '11.RouteConfig.js',
     desc: 'React routes can be created from config'
   },
-  { path: '/modal-gallery',    
+  { path: '/modal-gallery',
     component: ModalGallery,
     title: 'Modal Gallery',
+    file: '12.ModalGallery.js',
     desc: 'Modal gallery, two screens at one url'
   },
-  { path: '/static-router',    
+  { path: '/static-router',
     component: StaticRouter,
     title: 'Static Router',
+    file: '13.StaticRouter.js',
     desc: 'Static router example'
   }
 ]
 
 const Routes = () => (
-  <div className='thumbnail' style={{padding: '20px'}}>
+  <div>
     {routes.map(route => (
-      <Route path={route.path} component={route.component}/>
+      <Route path={route.path} 
+        render={(props) => (
+          <div>
+            <div className='thumbnail' style={{padding: '20px'}}>
+            <route.component {...props}/>
+            </div>     
+            <CodeSnippet fileName={route.file}/>
+          </div>
+        )}
+      />
     ))}
     <Route exact path='/' render={() => (
       <div>
