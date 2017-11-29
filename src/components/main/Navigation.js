@@ -9,8 +9,8 @@ import { routes } from './Routes'
 
 const Navigation = () => (
   <ListGroup>
-    {routes.map(route => (
-      <LinkContainer to={route.path}>
+    {routes.map((route, index) => (
+      <LinkContainer to={route.path} key={index}>
         <ListGroupItem header={route.title}>{route.desc}</ListGroupItem>
       </LinkContainer>  
     ))}

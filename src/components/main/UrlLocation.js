@@ -7,10 +7,10 @@ import { LinkContainer } from 'react-router-bootstrap'
 const UrlLocation = () => (
   <Breadcrumb>
     <LinkContainer to='/'><Breadcrumb.Item>Home</Breadcrumb.Item></LinkContainer>
-    {routes.map(x => (
-      <Route path={x.path} render={({location})=> (
+    {routes.map((route, index) => (
+      <Route path={route.path} key={index} render={({location})=> (
         <LinkContainer to={location.pathname}>
-          <Breadcrumb.Item>{x.title}</Breadcrumb.Item>
+          <Breadcrumb.Item>{route.title}</Breadcrumb.Item>
         </LinkContainer>
         )
       }/>

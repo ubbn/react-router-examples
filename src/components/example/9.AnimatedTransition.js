@@ -1,5 +1,5 @@
 import React from 'react'
-import { TransitionGroup } from 'react-transition-group'
+import { Transition } from 'react-transition-group'
 import {
   BrowserRouter as Router,
   Route,
@@ -35,10 +35,9 @@ const AnimationExample = () => (
         </ul>
 
         <div style={styles.content}>
-          <TransitionGroup
+          <Transition
             transitionName="fade"
-            transitionEnterTimeout={300}
-            transitionLeaveTimeout={300}
+            timeout={1000}
           >
             {/* no different than other usage of
                 CSSTransitionGroup, just make
@@ -52,7 +51,7 @@ const AnimationExample = () => (
               path="/:h/:s/:l"
               component={HSL}
             />
-          </TransitionGroup>
+          </Transition>
         </div>
       </div>
     )}/>
@@ -86,6 +85,8 @@ styles.fill = {
 styles.content = {
   ...styles.fill,
   top: '40px',
+  width: '490px',
+  height: '300px',
   textAlign: 'center'
 }
 

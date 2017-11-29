@@ -99,8 +99,8 @@ export const routes = [
 
 const Routes = () => (
   <div>
-    {routes.map(route => (
-      <Route path={route.path} 
+    {routes.map((route, index) => (
+      <Route path={route.path} key={index}
         render={(props) => (
           <div>
             <div className='thumbnail' style={{padding: '20px'}}>
